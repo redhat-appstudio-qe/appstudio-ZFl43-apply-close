@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-gilu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-pyxis-tenant/appstudio/dc-metro-map-gilu@sha256:53f2c67762c3a96bbdeaa66f8b3842a0f4c07cba048ed116bdbe039e52d94194
+        name: my-nodejs
+        resources: {}
+status: {}
